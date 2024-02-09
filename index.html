@@ -1,0 +1,194 @@
+<!-- The Flying Dutchman
+     index.html
+     Created by 'Pirates of the Caribbean' on 09 of February 2018. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <!-- Metadata-->
+    <title id="page_title">The Flying Dutchman</title>
+    <meta name="Description goes here" content="">
+    <meta name="Pirates of the Caribbean" content="tags go here">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <!-- Responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS sheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Oswald" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!-- Your code starts here -->
+    <div id="barManLog">
+      <a onclick="openLogin('loginBox', 'block', 'bartender')"><div class="margin_button flipper" id="bartender">Bartender login</div></a>
+      <a onclick="openLogin('loginBox', 'block', 'management')"><div class="margin_button flipper" id="management">Management login</div></a>
+    </div>
+
+    <div id="overlay" class="hidden"></div>
+
+    <!-- login box -->
+      <div id="loginBox" class="login">
+
+        <button id = "close" class="close" onclick="closeLogin()">X</button>
+        <form name = "loginForm" action="javascript: void(0);">
+
+          <h1>Log into The Flying Dutchman</h1>
+
+          <a id="user_name"><h2>User name</h2></a>
+          <input type="text" name="user_name" placeholder="Enter your user name">
+
+          <a id="password"><h2>Password</h2></a>
+          <input type="password" name="password" placeholder="Enter your password">
+
+          <div align="center">
+            <input type="submit" id="login" name="login" value="Log In!" onClick="loginDB(loginForm)">
+
+          </div>
+        </form>
+      </div>
+
+    <div id="about"> < About this project</div>
+
+    <div id="about_window" class="hidden">
+
+      <div class="close_window">X</div>
+
+      <h2>The Flying Dutchman</h2>
+
+      <div class= "scrollable">
+
+        <p>This is our submission project for User Interface Programming I at Uppsala University</p>
+        <p>For this task we had to create an interface for a fictitious bar, but we were not allow to use any web framework or any other tool other than HTML, CSS and JavaScript (with JQuery).
+        To complete this task, we had to implement a dummy database and create fully functional ordering system implementing interface design principles. Moreover, this website is fully responsive and implements undo/redo and drag and drop (try dragging the pirate flag to the ship).</p>
+
+        <p>Click on the green tab to get some passwords and try out our implementation. Scroll down for link to the repo on Github.</p>
+        <p>We are the Pirates of the Caribbean!</p>
+        <h3>Group Members are:</h3>
+        <ul>
+          <li>Mauro José Pappaterra</li>
+          <li>Jenny Olsson</li>
+          <li>Hassan Odimi</li>
+          <li>Yawen Yi</li>
+          <li>Elsa Slättegård</li>
+        </ul>
+
+        <p>Github repo: <a href="https://github.com/yogurt1989/The-Flying-Dutchman.git" target="_blank">https://github.com/yogurt1989/The-Flying-Dutchman.git</a></p>
+
+      </div>
+
+    </div>
+
+    <div id="passwords"> < Get the passwords</div>
+
+    <div id="passwords_window" class="hidden">
+
+      <div class="close_window">X</div>
+
+      <h2>Login Passwords</h2>
+
+      <div class= "scrollable">
+
+        <p>You can use these passwords to access the different pages in "The Flying Dutchman" and test all the features! You are welcome!</p>
+
+        <h3>VIP Customers (all rich):</h3>
+        <ul>
+          <li>username: hassan</li>
+          <li>password: hassan123</li>
+        </ul>
+
+        <ul>
+          <li>username: jenny</li>
+          <li>password: jenny123</li>
+        </ul>
+
+        <h3>Non VIP Customer (with no credit):</h3>
+        <ul>
+          <li>username: janhei</li>
+          <li>password: nonvip123</li>
+        </ul>
+
+        <h3>Bartenders:</h3>
+        <ul>
+          <li>username: yawen</li>
+          <li>password: yawen123</li>
+        </ul>
+
+        <ul>
+          <li>username: elsa</li>
+          <li>password: elsa123</li>
+        </ul>
+
+        <h3>Manager:</h3>
+        <ul>
+          <li>username: mauro</li>
+          <li>password: mauro123</li>
+        </ul>
+
+        <h3>Test Users (work in all three pages):</h3>
+        <ul>
+          <li>username: test</li>
+          <li>password: test</li>
+        </ul>
+        <ul>
+          <li>username: sudo</li>
+          <li>password: sudo</li>
+        </ul>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- DnD pics/gifs -->
+    <div align="center" ondrop="picToGif(event)"  ondragover="allowDrop(event)">
+
+      <img id="piratePic" class="gif" src="img/logo/white3.png">
+      <video id="great" class="gif" id="gifPirate" preload="auto" poster="https://img-9gag-fun.9cache.com/photo/ajEXymq_460s.jpg" loop="loop" style="display:none; height: 40%; width: 40%; margin-right: 28%; margin-left: 32%;">
+        <source src="https://img-9gag-fun.9cache.com/photo/ajEXymq_460sv.mp4" type="video/mp4">
+          <source src="https://img-9gag-fun.9cache.com/photo/ajEXymq_460svwm.webm" type="video/webm">
+      </video>
+    </div>
+
+    <a display="block" onclick="openLogin('loginBox', 'block', 'customer')"><div class="login_button flipper" id="customer">Order your Drinks!</div></a>
+
+
+    <!-- LANGUAGE MENU -->
+    <div class="languages_menu">
+      <a href="#" id="eng"><div class="languages"> <img src="img/eng.png"></div></a>
+      <a href="#" id="sve"><div class="languages"> <img src="img/sve.png"></div></a>
+      <a href="#" id="ita"><div class="languages"> <img src="img/ita.png"></div></a>
+      <a href="#" id="esp"><div class="languages"> <img src="img/esp.png"></div></a>
+      <a href="#" id="pirate"><div class="languages"> <img src="img/pirate.jpg" id="pirateFlag" draggable="true" ondragstart="drag(event)"></div></a>
+    </div>
+
+    <!-- Your code ends here -->
+
+    <!-- External Scripts -->
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Load Database -->
+    <script src="db/DB.js" type="text/javascript"></script>
+
+    <!-- Scripts -->
+    <script src="js/view/view_common.js" type="text/javascript"></script>
+    <script src="js/view/view_index.js" type="text/javascript"></script>
+
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/login.js" type="text/javascript"></script>
+    <script src="js/multilanguage.js" type="text/javascript"></script>
+
+  </body>
+</html>

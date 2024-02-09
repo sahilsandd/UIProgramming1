@@ -1,0 +1,448 @@
+/* The Flying  Dutchman
+   index.css
+   Created by 'Pirates of the Caribbean' on 20 of February 2018.
+*/
+
+
+/*Style Sheet for the login page*/
+#user_name,#password{
+    color: white;
+    cursor: default;
+}
+#piratePic {
+    display:block;
+    height: 40%;
+    width: 40%;
+    margin-right: 29%;
+    margin-left: 31%;
+}
+
+/*Menu Buttons*/
+.big_button {
+    margin: 5%;
+    padding: 2%;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+}
+
+.big_button_small{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    clear: both;
+}
+
+.big_button_medium,.big_button_large{
+    width: 45%;
+    float: right; /*right;*/
+    clear: none;
+
+    margin: 2%;
+}
+.languages_menu{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+body {
+    background-image: url("../img/storm.jpg");
+    background-size: cover;
+
+    max-width: 100%;
+    background-repeat: repeat-y;
+
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.margin_button{
+    display: inline-block;
+    font-size: 80%;
+    width: 40%;
+    clear: both;
+    margin: 2%;
+    text-align: center;
+    position: relative;
+    color: white;
+
+}
+
+.close {
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    background:#ccc;
+}
+
+.close:hover {
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    background:#ccc;
+    color:red;
+}
+
+.test {
+    loop: loop;
+    autoplay: autoplay;
+}
+
+/*why wont u center...*/
+.login_button {
+    float: none;
+    width: 30%;
+    height: 40px;
+
+    padding: 1%;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+
+}
+#barManLog{
+    display: inline;
+    float: left;
+    width: 30%;
+    color: white;
+}
+
+#about{
+    background-color: rgba(251, 0, 27,0.6);
+    color: rgb(255, 255, 255);
+
+    border-style: solid;
+    border-right-style: none;
+    position: fixed;
+    border-width: 0.5px;
+    border-color: rgb(255, 255, 255);
+    height: 14px;
+    width: 10px;
+    right: 0px;
+    font-family: "Consolas", "Menlo", "Courier", monospace;
+    font-size: 15px;
+    padding: 7px;
+    z-index: 999;
+
+    border-radius: 5px;
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+#about:hover {
+    animation: appear 500ms cubic-bezier(.83,.67,.83,.67)forwards;
+}
+
+@keyframes appear {
+    0% {width: 15px;}
+    20% {width: 20px;}
+    40% {width: 60px;}
+    60% {width: 100px;}
+    80% {width: 140px;}
+    100% {width: 180px;}
+}
+@keyframes whiteLetters {
+    from {color: black;}
+    to {color: white;}
+}
+
+#about_window, #passwords_window {
+    position: fixed;
+    border-radius: 5px;
+
+    background-color: rgba(255, 0, 0, 0.5);
+    background-size:cover;
+    padding: 20px;
+
+    width: 40%;
+    height: 500px;
+    margin-top: 5%;
+
+    margin-left: 30%;
+    margin-right: 30%;
+
+    box-shadow: 5px 5px 30px black;
+
+    clear: both;
+    z-index: 999;
+}
+
+#passwords_window {
+    background-color: rgba(51, 201, 45, 0.5);
+}
+
+#passwords{
+    background-color: rgba(0, 255, 0,0.6);
+    color: rgb(255, 255, 255);
+
+    border-style: solid;
+    border-right-style: none;
+    position: fixed;
+    border-width: 0.5px;
+    border-color: rgb(255, 255, 255);
+    height: 14px;
+    width: 10px;
+    right: 0px;
+    top: 45px;
+    font-family: "Consolas", "Menlo", "Courier", monospace;
+    font-size: 15px;
+    padding: 7px;
+    z-index: 999;
+
+    border-radius: 5px;
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+#passwords:hover {
+    animation: appear 500ms cubic-bezier(.83,.67,.83,.67)forwards;
+}
+
+#passwords.full_length,#about.full_length{
+    width: 180px;
+    pointer-events: none;
+}
+
+.scrollable {
+    overflow: auto;
+    height: 400px;
+}
+
+.close_window{
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+}
+
+
+.close {
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    background:#ccc;
+}
+
+.close:hover {
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    background:#ccc;
+    color:#fff;
+}
+
+.gif {
+    vertical-align: middle;
+    display:none;
+    clear: both;
+}
+
+.test {
+    loop: loop;
+    autoplay: autoplay;
+}
+
+.login_button {
+    float: none;
+    width: 30%;
+    height: 40px;
+    margin: 3%;
+
+    margin-left: 35%;
+    margin-right: 35%;
+
+    padding: 1%;
+    display: block;
+    text-align: center;
+    font-size: 150%;
+}
+
+#barManLog{
+    display: inline;
+    float: left;
+    width: 30%;
+}
+
+/*Log in window*/
+
+.hidden {
+    visibility: hidden;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top:0px ;
+    z-index: 5;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.login {
+    margin: 80px 100px;
+    margin-top: 50%;
+    margin: 80px 100px;
+}
+
+.login {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    /*background-color: #0C2924;*/
+    background-image: url("../img/wood3.jpg");
+    background-size:cover;
+    padding: 20px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    /*background: linear-gradient(#254540,#0C2924);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;*/
+    box-shadow: 5px 5px 30px black;
+    z-index: 10;
+    clear: both;
+}
+
+/*login stuff below*/
+
+input[type=submit] {
+    width: 60%;
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 60%;
+    background: linear-gradient(darkgray,grey);
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: black;
+    box-shadow: 1px 1px 20px #061614, -1px -1px 20px #061614;
+
+}
+
+input[type=submit]:hover {
+    background-color: darkgreen;
+}
+
+@media only screen and (max-width: 414px)
+{
+    /*change the size of the login box to suit the phones*/
+    /* iPhone 6s was my main focus but it looks fine on other phones sizes */
+    .login{
+        background-image: url("../img/wood3.jpg");
+        background-size:cover;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 10px;
+        box-shadow: 5px 5px 30px black;
+        font-size: xx-small;
+        height: 46%;
+        margin-top: 0px;
+        margin-left: 14%;
+        width: 51%;
+    }
+}
+
+
+/*Responsiveness*/
+/* For mobile phones: */
+/* try it with iPhone 6 models*/
+@media only screen and (max-width: 414px)
+{
+    /* only the customer is going to use the App on his phone to order drinks,therefore we hide the management login on phones*/
+    div.margin_button  {display: none;}
+
+    /* enlarge the order button and the font for easy reading on small phones*/
+    .login_button {
+        float: none;
+        width: 70%;
+        height: auto;
+        display: block;
+        text-align: center;
+        font-size: 150%;
+        margin-left: 15%;
+        margin-top: 15%;
+    }
+    #piratePic{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 30%;
+    }
+
+
+    .languages_menu {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 30%;
+    }
+
+    .languages img 
+    {
+/*
+        width: 45px;
+        height: 25px;*/
+        width: 15%;
+        height: 15%;
+    }
+    .languages {
+        margin-left: 2%
+    }
+
+    .login {
+        width: 65%;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: auto;
+    }
+
+    body{background-size: auto;}
+}
