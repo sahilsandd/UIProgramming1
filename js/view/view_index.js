@@ -60,9 +60,3 @@ var login = ["Login",
              "Iniciar sesión",
              "Login"];
 
-var combined = ["Login",
-             "Logga in",
-             "Einloggen",
-             "Iniciar sesión",
-             "Login"];
-
