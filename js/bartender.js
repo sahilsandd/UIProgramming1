@@ -35,7 +35,6 @@ $(document).ready(function() {
 
     // display new orders on click 
     $("#retrieve_orders").click(function() {
-        console.log("Orders retrieved")
         if (localStorage.getItem("NEWORDER") == 1) {
             $("#retrieve_orders").css("background","");
             updateTransactions();
@@ -45,7 +44,6 @@ $(document).ready(function() {
     
     // filter orders by category
     $("#all").click(function() {
-        console.log("All clicked")
         highlightTab("*#all");
         current_tab = "all";
         $("#all_orders").empty();
@@ -54,9 +52,7 @@ $(document).ready(function() {
     });
 
     $("#unpaid").click(function() {
-        console.log("Unpaid clicked")
         highlightTab("*#unpaid");
-        current_tab = "unpaid";
         $("#all_orders").empty();
         $.each(SESSIONS_TRANSACTIONS, function(element){
             if (this.paid != true){ // filter only unpaid
@@ -67,7 +63,6 @@ $(document).ready(function() {
     });
 
     $("#paid").click(function() {
-        console.log("Paid clicked")
         highlightTab("*#paid");
         current_tab = "paid";
         $("#all_orders").empty();
@@ -390,3 +385,4 @@ function translate (index) {
     $("#cancel_order").text(cancel_order[index]);
     $("#mark_paid").text(mark_paid[index]);
 }
+

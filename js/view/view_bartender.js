@@ -21,25 +21,25 @@
 
 var title = ["Bartender View",
             "Bartendersidan",
-            "Vista Barista",
+            "Baransicht",
             "Vista de barman",
             "Bartender View"];
 
 var orders_q= ["Orders Queue",
                 "Beställningar kö",
-                "Coda ordini",
+                "Warteschlange Bestellungen",
                 "Pedidos en cola",
                 "Orders Queue"];
 
 var cancel_order= ["Cancel Order",
                     "Avbryt beställning",
-                    "Annulla Ordine",
+                    "Bestellung abbrechen",
                     "Cancelar orden",
                     "Cancel Order"];
 
 var mark_paid= ["Mark as Paid",
                 "Markera som betald",
-                "Contrassegna come pagato",
+                "Als bezahlt markiert",
                 "Marcar como pagado",
                 "Mark as Paid"];
 
@@ -53,7 +53,7 @@ function message_mark_paid (order_id, index) {
         case 1:
             return "Beställningen #" + order_id.slice(1) + " har markerats som betald!";
         case 2:
-            return "La ordine #" + order_id.slice(1) + " si ha stampato como pagata";
+            return "Die Bestellung #" + order_id.slice(1) + " wurde als bezahlt markiert";
         case 3:
             return "La orden #" + order_id.slice(1) + " se ha marcado como paga!";
         case 4:
@@ -68,7 +68,7 @@ function message_delete_order (order_id, index) {
         case 1:
             return "Beställningen #" + order_id.slice(1) + " har markerats som betald!";
         case 2:
-            return "La ordine #" + order_id.slice(1) + " si ha cancellato";
+            return "Die Bestellung #" + order_id.slice(1) + " wurde gelöscht";
         case 3:
             return "La orden #" + order_id.slice(1) + " se ha eliminado!";
         case 4:

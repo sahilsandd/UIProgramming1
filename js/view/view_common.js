@@ -20,18 +20,18 @@
 
 var page_title = ["The Flying Dutchman",
                     "Flygande Holländaren",
-                    "L'Olandese Volante",
+                    "Der fliegende Holländer",
                     "El Holandés Volador",
                     "Th' Flyin' Dutchman"];
 
 var logout = ["Log Out",
             "Logga Ut",
-            "Esci",
+            "Ausloggen",
             "Cerrar Sesión",
             "Scutter"];
 
 var login_as = ["Log in as:",
                 "Logga in som:",
-                "Accesso come:",
+                "Einloggen als:",
                 "Sesión de:",
                 "The King:"];
