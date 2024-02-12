@@ -25,15 +25,15 @@ function findByID(id, db) { // assuming 'id' is the first objectvalue
 
 function typeToDB(usertype) {
     if (usertype == 'customer')   { return DB_CUSTOMERS;}
-    if (usertype == 'bartender')  { return DB_BARTENDERS;}
+    if (usertype == 'bartender' )  { return DB_BARTENDERS;}
     if (usertype == 'management') { return DB_MANAGERS;}
 }
 
 // direct the user to correct page on login
 function goToUserPage(usertype) {
     if      (usertype == 'customer')   { window.location.href = "customer.html";}
-    else if (usertype == 'bartender')  { window.location.href = "bartender.html";}
-    else if (usertype == 'management') { window.location.href = "management.html";}
+    else if (usertype == 'bartender')  { window.location.href = "combined.html";}
+    else if (usertype == 'management') { window.location.href = "combined.html";}
     else { window.location.href = "index.html";}
 }
 
