@@ -41,19 +41,12 @@
 
     margin: 2%;
 }
-.languages_menu{
-    margin-left: 20%;
-    margin-right: 20%;
-}
 
 body {
-    background-image: url("../img/storm.jpg");
-    background-size: cover;
-
-    max-width: 100%;
-    background-repeat: repeat-y;
-
-    font-family: 'Oswald', sans-serif;
+    background-image: url("../img/redsails.jpg");
+    background-size: cover; /* Cover the entire viewport */
+    background-attachment:fixed; /* Keeps the background fixed in place */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
 
@@ -89,26 +82,9 @@ body {
     autoplay: autoplay;
 }
 
-/*why wont u center...*/
-.login_button {
-    float: none;
-    width: 30%;
-    height: 40px;
-
-    padding: 1%;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-
-}
 #barManLog{
-    display: inline;
-    float: left;
-    width: 30%;
+    display: block;
+    width: 20%;
     color: white;
 }
 
@@ -252,21 +228,19 @@ body {
     float: none;
     width: 30%;
     height: 40px;
-    margin: 3%;
+    margin-top: 15%;
 
     margin-left: 35%;
     margin-right: 35%;
 
     padding: 1%;
-    display: block;
     text-align: center;
     font-size: 150%;
 }
 
 #barManLog{
-    display: inline;
-    float: left;
-    width: 30%;
+    display: block;
+    width: 20%;
 }
 
 /*Log in window*/
@@ -427,14 +401,14 @@ input[type=submit]:hover {
 
     .languages img 
     {
-/*
+        /*
         width: 45px;
         height: 25px;*/
         width: 15%;
         height: 15%;
     }
     .languages {
-        margin-left: 2%
+        margin-left: 2%;
     }
 
     .login {
