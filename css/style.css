@@ -177,6 +177,10 @@ a:active {
     box-decoration-break: clone;
 }
 
+.flipper:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
 .light_orange {
     background-color: #fbe104;
 }

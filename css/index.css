@@ -65,15 +65,16 @@ body {
 .close {
     float:right;
     display:inline-block;
+    border-radius: 5px;
     padding:2px 5px;
-    background:#ccc;
+    background: transparent;
 }
 
 .close:hover {
     float:right;
     display:inline-block;
     padding:2px 5px;
-    background:#ccc;
+    background:transparent;
     color:red;
 }
 
@@ -202,15 +203,16 @@ body {
     float:right;
     display:inline-block;
     padding:2px 5px;
-    background:#ccc;
+    background:transparent;
+    color: white;
 }
 
 .close:hover {
     float:right;
     display:inline-block;
     padding:2px 5px;
-    background:#ccc;
-    color:#fff;
+    background:transparent;
+    cursor: pointer;
 }
 
 .gif {
@@ -237,7 +239,9 @@ body {
     text-align: center;
     font-size: 150%;
 }
-
+.login_button:hover{
+    background-color: rgba(255, 0, 0, 0.5);
+}
 #barManLog{
     display: block;
     width: 20%;
@@ -272,7 +276,7 @@ body {
     position: absolute;
     border-radius: 5px;
     /*background-color: #0C2924;*/
-    background-image: url("../img/wood3.jpg");
+    background-image: url("../img/red-sunset-dark-sea.avif");
     background-size:cover;
     padding: 20px;
     width: 40%;
@@ -282,7 +286,7 @@ body {
     border-width: 1px;
     border-style: solid;
     border-radius: 10px;*/
-    box-shadow: 5px 5px 30px black;
+    box-shadow: 5px 5px 50px white;
     z-index: 10;
     clear: both;
 }
@@ -311,7 +315,7 @@ input[type=text], select {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border-radius: 4px;
+    border-radius: 40px;
     box-sizing: border-box;
 }
 
@@ -326,25 +330,25 @@ input[type=password], select {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border-radius: 4px;
+    border-radius: 40px;
     box-sizing: border-box;
 }
 
 input[type=submit] {
     width: 60%;
-    background: linear-gradient(darkgray,grey);
-    color: black;
+    background: transparent;
+    color: white;
     padding: 14px 20px;
     margin: 8px 0;
-    border-radius: 4px;
+    border-radius: 40px;
     cursor: pointer;
     border-color: black;
-    box-shadow: 1px 1px 20px #061614, -1px -1px 20px #061614;
+    box-shadow: 1px 1px 20px white, -1px -1px 20px white;
 
 }
 
 input[type=submit]:hover {
-    background-color: darkgreen;
+    background-color: rgba(255, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 414px)
@@ -357,7 +361,7 @@ input[type=submit]:hover {
         border-width: 1px;
         border-style: solid;
         border-radius: 10px;
-        box-shadow: 5px 5px 30px black;
+        box-shadow: 5px 5px 50px rgb(255, 255, 255);
         font-size: xx-small;
         height: 46%;
         margin-top: 0px;
