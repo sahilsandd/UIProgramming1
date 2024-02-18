@@ -77,12 +77,9 @@ a:active {
 /*UNDO-REDO MENU*/
 
 .undo_redo_menu {
-/**    background-color: #a4a4a4;*/
-    float: left;
+    position: absolute;
     margin: 1%;
-    margin-top: 1%;
-
-
+    margin-top: 3%;
 }
 
 #undo, #redo {
