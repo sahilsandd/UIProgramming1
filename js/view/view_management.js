@@ -20,68 +20,68 @@
 
 var title = ["Drink Delivery Database System",
              "Databas för Drikesleverance",
-             "Sistema di database per consegne",
+             "Datenbanksystem für Getränkelieferungen",
              "Sistema de base de datos para entregas",
              "Drink Delivery Database System"];
 
 var stock_order = ["Stock Order",
                    "Lagerbeställning",
-                   "Ordine di riserva",
+                   "Lagerbestellung",
                    "Orden de Stock",
                     "Stock Order"];
 
  var drinks_list = ["Full Drinks List",
                     "Full drinklista",
-                    "Lista completa",
+                    "Gesamte Getränkeliste",
                     "Lista completa",
                     "Full Drinks List"];
     
 var check_stock = ["Check Bar Stock",
                 "Kontrollera Bar Lager",
-                "Magazzino",
+                "Barlager kontrollieren",
                 "En Almacén",
                 "Check Bar Stock"];
 
 var shortage_alert = ["Shortage Alert (!)",
                     "Bristvarning (!)",
-                    "Avviso di carenza (!)",
+                    "Mangelwarnung (!)",
                     "Alerta de escasez (!)",
                     "Shortage Alert (!)"];
 
 // The drink's details.
 var drink_name = ["Name:",
                 "Namn:",
-                "Nome:",
+                "Name:",
                 "Nombre:",
                 "Name:"];
 
 var type = ["Type:",
             "Typ:",
-            "Tipo:",
+            "Typ:",
             "El tipo:",
             "Type:"];
 
 var price= ["Price:",
             "Pris:",
-            "Prezzo:",
+            "Preis:",
             "Precio:",
             "Price:"];
 
 var country= ["Country:",
             "Land:",
-            "Nazione:",
+            "Land:",
             "País:",
             "Country:"];
 
 var volume= ["Volume:",
             "Volym:",
-            "Volume:",
+            "Volumen:",
             "Volumen:",
             "Volume:"];
 
 var alcohol=["Alcohol:",
             "Alkohol:",
-            "Alcol:",
+            "Alkohol:",
             "Alcohol:",
             "Alcohol:"];
 
@@ -93,67 +93,67 @@ var drink_id=["ID:",
 
 var producer=["Producer:",
             "Producent:",
-            "Produttore:",
+            "Hersteller:",
             "Productor:",
             "Producer:"];
 
 var delivery=["Delivery:",
             "Leverans:",
-            "La Consegna:",
+            "Lieferung:",
             "La Entrega:",
             "Delivery:"];
 
 var cost=["Cost per Liter:",
         "Kostnad per liter:",
-        "Costo per litro:",
+        "Preis pro Liter:",
         "Costo por litro:",
         "Cost per Liter:"];
 
 var inStock=["In Stock:",
             "I lager:",
-            "Disponibile:",
+            "Auf Lager:",
             "En stock:",
             "In Stock:"];
 
 var add_one=["Add +1",
             "Tillägga +1",
-            "Aggiungere +1",
+            "Hinzufügen +1",
             "Agregar +1",
             "Add +1"];
 
 var add_ten=["Add +10",
             "Tillägga +10",
-            "Aggiungere +10",
+            "Hinzufügen +10",
             "Agregar +10",
             "Add +10"];
 
 var add_hundred=["Add +100",
                 "Tillägga +100",
-                "Aggiungere +100",
+                "Hinzufügen +100",
                 "Agregar +100",
                 "Add +100"];
 
 var total= ["TOTAL:",
             "TOTAL:",
-            "TOTALE:",
+            "GESAMT:",
             "TOTAL:",
             "TOTAL:"];
 
 var pay= ["Place Stock Order",
         "Placera lagerorder",
-        "Posizionare l'ordine",
+        "Lagerbestellung aufgeben",
         "Realizar pedido",
         "Place Stock Order"];
 
 // Alert pop-up messages
 var message_empty_order = ["You must select your drinks before placing an order!",
                    "Du måste välja dina drycker innan du gör din beställning!",
-                   "È necessario selezionare le bevande prima di effettuare un ordine!",
+                   "Du musst Getränke auswählen bevor die Bestellung aufgegeben werden kann!",
                    "¡Debe seleccionar sus bebidas antes de realizar un pedido!",
                    "Ye must select yer drinks afore placin' an order!"];
 
 var message_placed_order = ["Your order has been placed!",
                     "Din beställning är skickad!",
-                    "Il tuo ordine è stato inoltrato!",
+                    "Deine Bestellung wurde aufgegeben!",
                     "¡Su orden ha sido puesta!",
                     "Yer order has been placed!"];

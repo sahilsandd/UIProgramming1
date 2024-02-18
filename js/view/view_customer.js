@@ -21,21 +21,21 @@
 
 var title = ["The Flying Dutchman's List of Drinks",
             "Flygande Holländaren drycklista",
-            "Lista di bevande nell'Olandese Volante",
+            "Die Getränkeliste des fliegenden Holländers",
             "Lista de tragos del Holandés Volador",
             "Th' Flyin' Dutchman't Loot"];
 
 // User info panel (top right corner)
 var customer= ["Customer:",
                 "Kund:",
-                "Cliente:",
+                "Kunde:",
                 "Cliente:",
                 "Pirate:"
                 ];
 
 var credit= ["Credit:",
             "Kredit:",
-            "Credito:",
+            "Kredit:",
             "Crédito:",
             "Yu'r Loot:"
 ];
@@ -43,56 +43,56 @@ var credit= ["Credit:",
 // The drink list panel
 var drink_list= ["Our Drink List",
                 "Vår drycklista",
-                "Nostra lista de bevande",
+                "Unsere Getränkeliste",
                 "Nuestra lista de bebidas",
                 "Booty Chest"
 ];
 // start drinks taps
 var all= ["All",
         "Allt",
-        "Tutte",
+        "Alle",
         "Todas",
         "Argh!"
 ];
 
 var beers= ["Beers",
             "Öl",
-            "Birre",
+            "Bier",
             "Cervezas",
             "Them Beers"
 ];
 
 var wines= ["Wines",
             "Vin",
-            "Vini",
+            "Wein",
             "Vinos",
             "Ol' Wines"
 ];
 
 var spirits= ["Spirits",
             "Sprit",
-            "Distillate",
+            "Spirituosen",
             "Destiladas",
             "Rons!"
 ];
 
 var kosher= ["Kosher",
             "Koscher",
-            "Kosher",
+            "Koscher",
             "Kosher",
             "K'sher"
 ];
 
 var ecologic= ["Ecologic",
                 "Ekologisk",
-                "Ecologico",
+                "Ökologisch",
                 "Ecológico",
                 "Tree Hugga'"
 ];
 
 var specials= ["specials",
                 "Särskild",
-                "Speciali",
+                "Sonderangebote",
                 "Especiales",
                 "King' Onlies"
 ];
@@ -100,55 +100,55 @@ var specials= ["specials",
 
 var your_order= ["Your Order",
                 "Din beställning",
-                "Il tuo ordine",
+                "Deine Bestellung",
                 "Su pedido",
                 "Th' Booty"
 ];
 
 var total= ["TOTAL:",
             "TOTALT:",
-            "TOTALE:",
+            "GESAMT:",
             "TOTAL:",
             "WADARTA:"
 ];
 
 var pl_order= ["Place Order",
                 "Beställ",
-                "Invia ordine",
+                "Bestellung aufgeben",
                 "Realizar pedido",
                 "Board 'em!"
 ];
 
 var hello = ["Hello ",
              "Hejsan ",
-             "Ciao ",
+             "Hallo ",
              "Hola ",
              "Ahoy "];
 
 var your_credit = ["Your credit is ",
                    "Din kredit är ",
-                   "Il tuo credito è ",
+                   "Dein Kredit ist ",
                    "Tu crédito es ",
                    "In yer duffle there be " ];
 
 // Alert pop-up messages
 var message_empty_order = ["You must select your drinks before placing an order!",
                    "Du måste välja dina drycker innan du gör din beställning!",
-                   "È necessario selezionare le bevande prima di effettuare un ordine!",
+                   "Du musst Getränke auswählen bevor die Bestellung aufgegeben werden kann!",
                    "¡Debe seleccionar sus bebidas antes de realizar un pedido!",
                    "Ye must select yer drinks afore placin' an order!"
                   ];
 
 var message_payed_order = ["Your order has been payed using your available credit, you can pick up your beverages in the VIP fridge.",
                    "Din beställning har blivit betalad med din tillgängliga kredit, du kan hämta dina drycker i VIP kylen.",
-                   "Il tuo ordine è stato pagato utilizzando il tuo credito disponibile, puoi ritirare le tue bevande nel frigo VIP.",
+                   "Deine Bestellung wurde mit deinen zur Verfügung stehenden Krediten bezahlt, du kannst sie im VIP Kühlschrank entgegennehmen",
                    "Su orden ha sido pagada usando su crédito disponible, puede recoger sus bebidas en el refrigerador VIP.",
                    "Yer order has been payed usin' yer available credit, ye can pick up yer beverages in th' VIP fridge."
                   ];
 
 var message_placed_order = ["Your order has been placed! Direct to the counter and pay for your order before you can pick up your drinks.",
                     "Din beställning är skickad! Var vänlig betala vid disken innan du kan hämta dina drycker.",
-                    "Il tuo ordine è stato inoltrato! Direttamente al banco e paga il tuo ordine prima di poter ritirare i tuoi drink.",
+                    "Deine Bestellung wurde aufgegeben! Begebe dich zur Theke and bezahle deine Bestellung bevor du deine Getränke entgegennehmen kannst.",
                     "¡Su orden ha sido puesta! Dirígete al mostrador y paga tu pedido antes de que puedas recoger tus bebidas.",
                     "Yer order has been placed! Direct t' th' counter 'n pay fer yer order afore ye can pick up yer drinks."         
                    ];

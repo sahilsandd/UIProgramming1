@@ -94,3 +94,4 @@ function translate (index) {
     $("#password").text(password[index]);
     $("#login").text(login[index]);
 }
+

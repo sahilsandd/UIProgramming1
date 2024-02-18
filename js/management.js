@@ -26,6 +26,7 @@ $(document).ready(function() {
     highlightTab("drinks_list");
     
     $("#drinks_list").click(function(){ /* Retrieve from Systembolaget*/
+        console.log("Drinks list clicked")
         highlightTab("drinks_list");
         $("#drink_database").empty();
         //addBackground();
@@ -33,6 +34,7 @@ $(document).ready(function() {
     });
 
     $("#specials_db").click(function(){ /* Retrieve from Mike's Specials*/
+        console.log("Specials clicked")
         highlightTab("specials_db");
         $("#drink_database").empty();
         //addBackground();
@@ -42,6 +44,7 @@ $(document).ready(function() {
     });
 
     $("#check_stock").click(function(){ /* Retrieve in stock*/
+        console.log("Check stock clicked")
         highlightTab("check_stock");
         $("#drink_database").empty();
         //addBackground();
@@ -53,6 +56,7 @@ $(document).ready(function() {
     });
 
     $("#shortage_alert").click(function(){ /* Retrieve on shortage alert*/
+        console.log("Shortage alert clicked")
         highlightTab("shortage_alert");
         $("#drink_database").empty();
         //addBackground();
@@ -444,14 +448,14 @@ function resetPage() {
 // highlight the currently displayed tab 
 function highlightTab(new_tab) {
     // reset previous tab display
-    previous_tab = '#' + current_tab;
-    $(previous_tab).css("background", "");
-    $(previous_tab).css("border-color", "#567973");
+    $(current_tab).css("background", "");
+    $(current_tab).css("border-color", "#567973");
     // highlight current tab
-    $('#' + new_tab).css("background", "#A4B9B6");
-    $('#' + new_tab).css("border-color", "#A4B9B6");
+    $(new_tab).css("background", "#A4B9B6");
+    $(new_tab).css("border-color", "#A4B9B6");
     current_tab = new_tab;
 }
+
 
 function translate (index) {
     $("#page_title").text(page_title[index]);

@@ -53,7 +53,6 @@ $(document).ready(function() {
 
     $("#unpaid").click(function() {
         highlightTab("*#unpaid");
-        current_tab = "unpaid";
         $("#all_orders").empty();
         $.each(SESSIONS_TRANSACTIONS, function(element){
             if (this.paid != true){ // filter only unpaid
@@ -386,3 +385,4 @@ function translate (index) {
     $("#cancel_order").text(cancel_order[index]);
     $("#mark_paid").text(mark_paid[index]);
 }
+

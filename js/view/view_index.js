@@ -20,43 +20,43 @@
 
 var welcome = ["Welcome to The Flying Dutchman!",
                "Välkommen til Flygande Holländaren!",
-               "Benvenuti al'Olandese Volante!",
+               "Willkommen im Fliegenden Holländer!",
                "Bienvenidos al Holandés Volador!",
                "Ahoy t' Th' Flyin' Dutchman!"];
 
 var customer = ["Order your Drinks!",
                 "Logga in som gäst",
-                "Accesso avventore",
+                "Getränke bestellen",
                 "Acceso cliente",
                 "Order yer Drinks"];
 
 var bartender = ["Bartender login",
                  "Logga in som bartender",
-                 "Accesso barista",
+                 "Barangestellte Login",
                  "Acceso barista",
                  "Bartender login"];
 
 var management = ["Management login",
                   "Logga in som arbetledare",
-                  "Accesso gestione",
+                  "Management Login",
                   "Acceso administración",
                   "Management login"];
 
 var user_name = ["User name",
                  "Användarnamn",
-                 "Nome utente",
+                 "Nutzername",
                  "Nombre de usuario",
                  "User name"];
 
 var password = ["Password",
                 "Lösenord",
-                "Parola d'ordine",
+                "Passwort",
                 "Contraseña",
                 "Password"];
 
 var login = ["Login",
              "Logga in",
-             "Accesso",
+             "Einloggen",
              "Iniciar sesión",
              "Login"];
 

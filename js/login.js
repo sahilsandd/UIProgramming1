@@ -32,8 +32,9 @@ function typeToDB(usertype) {
 // direct the user to correct page on login
 function goToUserPage(usertype) {
     if      (usertype == 'customer')   { window.location.href = "customer.html";}
-    else if (usertype == 'bartender')  { window.location.href = "bartender.html";}
-    else if (usertype == 'management') { window.location.href = "management.html";}
+    // if you change bartender / management to combined the access will be denied 
+    else if (usertype == 'bartender')  { window.location.href = "combined.html";}
+    else if (usertype == 'management') { window.location.href = "combined.html";}
     else { window.location.href = "index.html";}
 }
 
@@ -88,3 +89,4 @@ $(function () {
     $('#usr').html(user.first_name);
     $('#cre').html(user.credit);
 });
+
