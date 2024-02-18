@@ -7,7 +7,7 @@
 
 /*MENU COLUMN*/
 body{
-    background-image: url("../img/wood4.jpg");
+    background-image: url("../img/redsails.jpg");
     background-size: cover;
     max-width: 100%;
     background-repeat: repeat-y;
@@ -240,8 +240,6 @@ footer {
 }
 
 .languages_menu {
-    float: left;
-    width: 50%;
     clear: none;
 }
 
