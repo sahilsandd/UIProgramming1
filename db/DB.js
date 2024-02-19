@@ -2016,26 +2016,17 @@ var DB_STOCK = [{
 if (sessionStorage.getItem("SESSION_TRANSACTIONS") == null){
     sessionStorage.setItem("SESSION_TRANSACTIONS",JSON.stringify(DB_TRANSACTIONS));
     sessionStorage.setItem("SESSION_USER_INFO",JSON.stringify(DB_CUSTOMERS));
-    sessionStorage.setItem("transaction_counter",20);
-    //alert("User and Transaction databases loaded from script!")
-} /*else {
-    alert("User and Transaction databases will be loaded from session storage!")
-  }*/
+    sessionStorage.setItem("transaction_counter",20);}
 
 if (sessionStorage.getItem("SESSION_STOCK_INFO") == null){
     sessionStorage.setItem("SESSION_STOCK_INFO",JSON.stringify(DB_STOCK));
     //alert("Stock database loaded from script!")
-} /*else {
-    alert("Stock database will be loaded from session storage!")
-}*/
+}
 
 if (sessionStorage.getItem("SESSION_ORDERS") == null){
     sessionStorage.setItem("SESSION_ORDERS",JSON.stringify(DB_ORDERS));
     sessionStorage.setItem("orders_counter",15);
-    //alert("Orders database loaded from script!")
-} /*else {
-    alert("Orders database will be loaded from session storage!")
-}*/
+}
 
 var SESSIONS_TRANSACTIONS = JSON.parse(sessionStorage.getItem("SESSION_TRANSACTIONS"));
 var SESSION_USER_INFO = JSON.parse(sessionStorage.getItem("SESSION_USER_INFO"));
@@ -2044,6 +2035,3 @@ var SESSIONS_ORDERS = JSON.parse(sessionStorage.getItem("SESSION_ORDERS"));
 
 var transactions_counter = parseInt(sessionStorage.getItem("transaction_counter"));
 var orders_counter = sessionStorage.getItem("orders_counter");
-//alert(SESSIONS_ORDERS.toSource())
-
-/* END SESSION STORAGE DATA LOADING*/
